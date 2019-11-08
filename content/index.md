@@ -1,25 +1,24 @@
 ---
-title: "Min fina titel"
+title: "Hem"
+views:
+    byline:
+        region: main
+        template: anax/v2/block/default
+        sort: 2
+        data:
+            meta:
+                type: single
+                route: block/byline
+
 ---
-Min me-sida i kursen design
+Om mig
 =========================
 
-Detta innehåll är skrivet i markdown och du hittar innehållet i filen `content/index.md`.
 
-[FIGURE src="image/me.jpg?w=500" class="right" caption="Bild på mig"]
 
-Detta är min me-sida i kursen. Denna sidan innehåller en presentation av mig själv. Underhåll denna sidan under hela kursen och uppdatera den efter hand och behov.
+Mitt namn är Emma. Jag har precis börjat min utbildning i webbprogrammering vid Blekinge tekninska högskola. Jag läser programmet på distans och ser fram emot att lära mig många nya saker! Jag är uppvuxen i Helsingborg och flyttade år 2014 till Luleå för att plugga. I sommras flyttade jag ner ner till Karlskrona för att vara närmre famlij och vänner.
 
-Så, en presentation en bra början. Skriv några ord om dig själv. Jag börjar.
+På gymnasiet läste jag Naturvetenskap och läste sedan direkt vidare till civilingenjör inom Industriell ekonomi vid Luleå tekniska universitet och tog min examen i våras. På fritiden tycker jag om att fotografera och att vara ute i naturen. På sommaren är allt som har med vatten att göra favoriten och på vintern tycker jag om att åka skidor.
 
-Mitt namn är Mikael Roos. Född och uppvuxen i Bankeryd, Småland, strax utanför Jönköping, i ett villaområde som byggdes upp samtidigt som vi flyttade in där. Jag gillade landhockey och har spelat bandy och hockey samt gått bowlinggymnasiet i Nässjö. Jag har varit städare, diskare, kallskänka, servitör och kock. På ett bananskal landade jag i Ronneby när jag började högskolan 1990 där och nu är jag kvar med fru, barn och så vidare.
 
-Programmering har alltid intresserat mig sedan 13-årsåldern och min första dator var en Spectravideo 328 med bandspelare.
-
-Om jag skall nämna någon hobby, förutom webbprogrammering, så får det bli att bära sten på sommarstugetomten, och det finns sten så det räcker och blir över.
-
-Till och från får jag för mig att börja på lite hobbies, ett år satsade jag på pokerspel, ett annat år var det geocaching och sedan turfing. Nu ligger jag lågt med hobbies, men något kanske dyker upp...?
-
-Vi syns och hörs i forum och chatt!
-
-/Mikael
+[FIGURE src="image/pig.jpg?w=1100" class="right"]

@@ -14,3 +14,181 @@
 .rm-navbar-max {
     display: none;
 }
+
+
+/*Fonts*/
+p {
+    font-size: 17px;
+}
+
+
+
+.site-logo-text-icon, .site-logo {
+    display: none;
+}
+
+.site-logo-text a {
+    text-decoration: none;
+    color: black;
+}
+
+.region-header-col-1 {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.my-navbar {
+    list-style-type: none;
+    text-align: center;
+}
+
+.my-navbar li {
+    display: inline;
+    padding: 5px 20px;
+    float: none;
+}
+
+.my-navbar li a {
+    text-decoration: none;
+    color: black;
+}
+
+.outer-wrap-flash {
+    text-align: center;
+}
+
+.outer-wrap {
+    width: 80%;
+    margin: auto;
+}
+
+.outer-wrap-main {
+    padding: 20px 0;
+}
+
+
+
+/** Middle part**/
+article {
+    padding: 30px 20px;
+}
+
+.inner-wrap-main {
+    margin: auto;
+}
+
+.figure {
+    margin: auto 0;
+    padding: 20px 0;
+}
+
+.region-main {
+    width: 70%;
+}
+
+
+/** Redovisa**/
+.breadcrumb-list a {
+    text-decoration: none;
+    color: black;
+}
+
+.breadcrumb-list li{
+    list-style-type: none;
+}
+
+.inner-wrap-breadcrumb ul {
+    padding: 0;
+}
+
+.toc {
+    padding: 0;
+}
+.toc li{
+    list-style-type: none;
+}
+
+.toc a {
+    text-decoration: none;
+    color: black;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.article {
+    width: 90%;
+}
+
+img {
+    width: 100%;
+}
+
+
+.author-byline img{
+    float: left;
+    width: 80px !important;
+    height: 80px!important;
+}
+
+.author-byline p {
+    padding-left: 100px;
+}
+
+
+
+/** Om**/
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.has-sidebar-right {
+    width: 60%;
+}
+
+.wrap-sidebar {
+    width: 20%;
+}
+
+.wrap-sidebar h4 {
+    margin-bottom: 0px;
+}
+
+.wrap-sidebar p {
+    margin-top: 5px;
+}
+
+
+
+
+/** Footer**/
+.inner-wrap-footer {
+    background-color: #EEFBF5;
+    text-align: center;
+    margin: auto;
+    padding: 15px 0;
+}
+
+.footer-column-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer-column {
+    width: 25%;
+    text-align: justify;
+}
+
+.site-footer {
+    text-align: center;
+}
