@@ -24,4 +24,4 @@ På gymnasiet läste jag Naturvetenskap och läste sedan direkt vidare till civi
 [FIGURE src="image/pig.jpg?w=1100" class="right"]
 
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Utöver distansutbildningen driver jag även ett eget företag inom marknadsföring, vilket gör att jag inte har så mycket tid över. De stunderna som blir över brukar jag spenderar på att läsa böcker, titta på serier eller lägga pussel. 

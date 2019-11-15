@@ -1,1 +1,1 @@
-Copyright 2019, Emma Öhrwall 
+Emma Öhrwall, 2019 
