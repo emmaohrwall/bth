@@ -1,0 +1,551 @@
+/*!
+ * LESS version of the stylesheet for design kmom01.
+ *
+ * This stylesheet is for the design course and kmom01. Its intention is to
+ * use kmom01.css and lessify the style and use this as a wrapper for the new
+ * style.
+ */
+/**
+  * A responsive menu.
+  */
+/**
+ * Style for responsive menu
+ */
+/**
+ * Outer wrapper for menu
+ */
+.rm-navbar {
+  position: relative;
+}
+.rm-navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/**
+ * Avoid scrolling mobile devices
+ * OBSOLETE?
+ */
+/**
+ * Meny layout for the small buttonized menu.
+ */
+.rm-small {
+  display: none;
+  float: right;
+}
+a.rm-button {
+  display: inline-block;
+  color: inherit;
+  background-color: transparent;
+  outline: none;
+}
+a.rm-button:active {
+  color: inherit;
+  background-color: transparent;
+}
+a.rm-button .rm-button-face-1 {
+  position: absolute;
+  transition: color 0.1s ease;
+}
+a.rm-button .rm-button-face-2 {
+  position: relative;
+  color: transparent;
+  transition: color 0.1s ease;
+}
+a.rm-button.rm-clicked {
+  color: #9FB129;
+  background-color: transparent;
+}
+a.rm-button.rm-clicked .rm-button-face-1 {
+  color: transparent;
+}
+a.rm-button.rm-clicked .rm-button-face-2 {
+  z-index: 2;
+  color: inherit;
+}
+/**
+ * Standard meny layout, valid for any subtype.
+ */
+.rm-default li {
+  display: inline-block;
+}
+.rm-default li li {
+  display: block;
+  min-width: 10em;
+}
+.rm-default a {
+  display: block;
+  text-decoration: none;
+  white-space: nowrap;
+  padding: 1em;
+  outline: none;
+}
+.rm-default ul {
+  position: absolute;
+  z-index: 9999;
+  left: -9999px;
+}
+.rm-default ul.rm-show-submenu {
+  left: 0;
+}
+.rm-default ul li {
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.4);
+}
+.rm-default ul ul {
+  left: -9999px;
+}
+/**
+ * Menu layout for the desktop variant, usually full width of browser.
+ */
+.rm-desktop ul {
+  background-color: inherit;
+}
+.rm-desktop li {
+  position: relative;
+}
+.rm-desktop li a:hover,
+.rm-desktop li.current-menu-item a {
+  text-decoration: underline;
+}
+.rm-desktop li a {
+  color: inherit;
+  background-color: inherit;
+}
+.rm-desktop li a:hover {
+  color: inherit;
+  background-color: inherit;
+}
+.rm-desktop li:hover > ul {
+  left: 0;
+}
+.rm-desktop li:hover > ul.rm-submenu-level-1 {
+  left: auto;
+  left: 30%;
+}
+.rm-desktop li .rm-submenu-button {
+  display: none;
+}
+/**
+ * Menu layout for the mobile variant, usually for mobile screens.
+ */
+.rm-mobile {
+  width: 100%;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4);
+  background-color: #444;
+  color: #fff;
+}
+.rm-mobile a {
+  color: inherit;
+}
+.rm-mobile li {
+  display: block;
+  box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.4);
+  /*        // Header of submenu is closed
+        //&.sub-menu, // For WordPress menu generating
+        &.rm-submenu > a:before {
+            content: "\f0d7";
+        }
+
+        // Header of submenu is opened
+        &.rm-submenu-open > a:before {
+            content: "\f0d8";
+        }
+*/
+}
+.rm-mobile li.rm-submenu-open > ul {
+  position: relative;
+  left: 0;
+}
+/**
+ * Menu layout for the max variant, for mobile screens and complete menues.
+ * Swipe from right by default.
+ */
+.rm-max.rm-navbar {
+  position: absolute;
+  top: 16px;
+  right: 24px;
+}
+.rm-max .rm-small {
+  display: block;
+}
+.rm-max .rm-small .rm-button {
+  color: inherit;
+}
+.rm-max .rm-small .rm-button.rm-clicked {
+  color: #9FB129;
+  position: fixed;
+  top: 16px;
+  right: 24px;
+  z-index: 999;
+}
+.rm-max .rm-mobile {
+  transition: all 0.15s linear;
+  position: fixed;
+  z-index: 998;
+  top: 0;
+  transform: translateX(100%);
+  width: 500px;
+  max-width: 500px;
+  height: 500px;
+  overflow-y: auto;
+  padding-top: 72px;
+  background-color: #131313;
+  /* Color when menu item is clicked */
+  /* Button for submenu */
+  /* Style for submenu */
+}
+.rm-max .rm-mobile li a:active {
+  background-color: transparent;
+}
+.rm-max .rm-mobile.rm-clicked {
+  transform: translateX(0);
+}
+.rm-max .rm-mobile a:hover {
+  text-decoration: underline;
+}
+.rm-max .rm-mobile .rm-submenu-button {
+  float: right;
+  box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.4);
+  background-color: #444;
+  padding: 8px 24px;
+  margin-right: 8px;
+  margin-top: 10px;
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+}
+.rm-max .rm-mobile .rm-submenu-button:after {
+  content: "\25BC";
+}
+.rm-max .rm-mobile .rm-submenu-button:hover {
+  text-decoration: none;
+  background-color: #ccc;
+}
+.rm-max .rm-mobile li ul {
+  padding-left: 8px;
+}
+.rm-max .rm-mobile .rm-submenu-open > .rm-submenu-button:after {
+  content: "\25B2";
+}
+.rm-max.rm-swipe-left .rm-mobile {
+  left: 0;
+}
+.rm-max.rm-swipe-right .rm-mobile {
+  right: 0;
+}
+/**
+ * Style for responsive menu
+ */
+/**
+  * Example on media queries
+  */
+@media screen and (max-width: 680px) {
+  .rm-small {
+    display: block;
+  }
+  .rm-desktop {
+    display: none;
+  }
+}
+@media screen and (min-width: 680px) {
+  .rm-small {
+    display: none;
+  }
+}
+/**
+ * Internal self contained modules, save in directory module/.
+ */
+/*!
+ * Stylesheet for design kmom01.
+ *
+ * This stylesheet is for the design course and kmom01. Fill it with style
+ * to style up the website so it is useable.
+ */
+/**
+ * Style for the stylechooser.
+ */
+/**
+ * Variables
+ */
+/**
+ * Style
+ */
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+html {
+  overflow-y: scroll;
+  background-color: #fff;
+}
+body {
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #fff;
+  font: 100.01%/1 'Raleway', sans-serif;
+  overflow-x: hidden;
+}
+img {
+  width: 100%;
+}
+article {
+  padding: 30px 20px;
+}
+/*Fonts*/
+p {
+  font-size: 17px;
+  letter-spacing: 1.5px;
+  line-height: 1.5;
+}
+h1 {
+  padding-top: 0;
+}
+a {
+  color: black;
+}
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+/**
+ * Variables
+ */
+/**
+ * General layout
+ */
+.inner-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.outer-wrap {
+  width: 80%;
+  margin: auto;
+}
+.outer-wrap-main {
+  padding: 20px 0;
+}
+/**
+ * Header and navbar
+ */
+.site-logo-text-icon,
+.site-logo {
+  display: none;
+}
+.site-logo-text a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Satisfy', cursive;
+  font-size: 30px;
+  padding-bottom: 10px;
+  padding-top: 15px;
+}
+.region-header-col-1 {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 7px;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.my-navbar {
+  list-style-type: none;
+  text-align: center;
+}
+.my-navbar li {
+  padding: 10px 20px;
+  float: none;
+}
+.my-navbar li a {
+  text-decoration: none;
+  color: black;
+  padding: 0;
+  display: inline;
+}
+.outer-wrap-flash {
+  text-align: center;
+}
+/** Middle part**/
+.inner-wrap-main {
+  margin: auto;
+}
+.figure {
+  margin: auto 0;
+  padding: 20px 0;
+}
+.region-main {
+  width: 70%;
+}
+/** Redovisa**/
+.region-breadcrumb {
+  display: none;
+}
+.breadcrumb-list a {
+  text-decoration: none;
+  color: black;
+}
+.breadcrumb-list li {
+  list-style-type: none;
+}
+.inner-wrap-breadcrumb ul {
+  padding: 0;
+}
+.toc {
+  padding: 3px;
+}
+.toc li {
+  list-style-type: none;
+  padding: 5px 0;
+  border-right: 1px solid black;
+}
+.toc a {
+  text-decoration: none;
+  color: black;
+}
+.section-header {
+  font-weight: 600;
+  padding-top: 13px !important;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.next-previous a {
+  text-decoration: none;
+  color: black;
+}
+.next {
+  float: right;
+}
+.previous {
+  float: left;
+}
+/** Om**/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.has-sidebar {
+  padding-top: 10px;
+}
+.wrap-sidebar {
+  width: 20%;
+}
+.wrap-sidebar h4 {
+  margin-bottom: 0px;
+}
+.wrap-sidebar p {
+  margin-top: 5px;
+  padding-bottom: 10px;
+  font-size: 14px;
+}
+/** Byline**/
+.author-byline img {
+  float: left;
+  width: 60px !important;
+  height: 60px!important;
+  border-radius: 50%;
+  padding-top: 10px;
+}
+.author-byline p {
+  padding-left: 70px;
+  margin: 0;
+}
+/** Footer**/
+.inner-wrap-footer:before {
+  content: " ";
+  display: block;
+  border-bottom: 1px solid black;
+}
+.inner-wrap-footer {
+  text-align: center;
+  margin: auto;
+  padding: 15px 0;
+  width: 1100px;
+}
+.footer-column-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 800px;
+  text-align: center;
+}
+.footer-column {
+  width: 30%;
+  text-align: justify;
+}
+.region-footer ul {
+  padding: 0;
+}
+.region-footer p {
+  margin: 3px;
+}
+/** Media query**/
+@media (max-width: 850px) {
+  .footer-column-wrapper,
+  .row {
+    flex-direction: column;
+  }
+  .wrap-sidebar {
+    width: 100%;
+  }
+  .region-main {
+    width: 100%;
+  }
+  .inner-wrap-footer {
+    text-align: left;
+    margin: auto;
+    padding: 15px 0;
+    width: 100%;
+  }
+}
+/**
+ * Layout for responsive style through media queries.
+ */
+@media screen and (max-width: 1500px) {
+  .site-logo {
+    display: none;
+  }
+}
+/**
+ * Show off the regions used in the website, to ease styling.
+ */
+.regions .outer-wrap {
+  background-color: #f4e3c9;
+  border: 1px solid #e3b774;
+}
+.regions .inner-wrap {
+  background-color: #f4e0e9;
+  border: 1px solid #d995b4;
+}
+.regions .region-header-col-1,
+.regions .region-header-col-2,
+.regions .region-header-col-3,
+.regions .region-flash,
+.regions .region-breadcrumb,
+.regions .region-flash-message,
+.regions .region-columns-above,
+.regions .region-main,
+.regions .region-after-main,
+.regions .region-columns-below,
+.regions .region-sidebar-left,
+.regions .region-sidebar-right,
+.regions .region-footer,
+.regions .region-footer-column-1,
+.regions .region-footer-column-2,
+.regions .region-footer-column-3 {
+  background-color: #b5dce1;
+  border: 1px solid #6cbac4;
+  color: #111;
+}
+/**
+ * My own settings, not currently in their own module.
+ */

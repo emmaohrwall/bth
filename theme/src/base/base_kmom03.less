@@ -1,0 +1,55 @@
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+@bgColorHtml: #fff;
+@bgColorBody: #fff;
+@colorBody: #333;
+
+
+// Activate grid and affect all typographic elements
+#desinax-hgrid.activateDefaultTypography();
+
+// Show the grid
+.hgrid .inner-wrap {
+    @gridImage: "../img/magic-number-@{magicNumber}.png";
+    #desinax-hgrid.showGrid(@gridImage);
+}
+
+// Activate the grid base font
+body {
+    #desinax-hgrid.font(@fontSizeBody);
+}
+
+
+html {
+    overflow-y: scroll;
+    background-color: @bgColorHtml;
+}
+
+body {
+    color: @colorBody;
+    background-color: @bgColorBody;
+    overflow-x: hidden;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    padding-inline-start: 0;
+    margin-block-start: 0.5em;
+}
+
+figure {
+    margin-inline-start: 20px;
+    margin-inline-end: 20px;
+}
