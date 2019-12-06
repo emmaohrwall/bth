@@ -1,0 +1,88 @@
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+
+
+// Activate grid and affect all typographic elements
+#desinax-hgrid.activateDefaultTypography();
+
+// Show the grid
+.hgrid .inner-wrap {
+    @gridImage: "../img/magic-number-@{magicNumber}.png";
+    #desinax-hgrid.showGrid(@gridImage);
+}
+
+// Activate the grid base font
+body {
+    #desinax-hgrid.font(@fontSizeBody);
+}
+
+// Enable style from the module and optinally add customized layout
+figure.figure {
+    #desinax-figure.figure();
+}
+
+figure.asciinema {
+    &:extend(figure.figure);
+    #desinax-figure.asciinema();
+}
+
+figure.codepen,
+figure.figure-codepen {
+    &:extend(figure.figure);
+    #desinax-figure.codepen();
+}
+
+
+html {
+    overflow-y: scroll;
+    background-color: @bgColorHtml;
+}
+
+body {
+    color: @colorBody;
+    background-color: @bgColorBody;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: @linkColor;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    padding-inline-start: 0;
+    margin-block-start: 0.5em;
+}
+
+figure {
+    margin-inline-start: 20px;
+    margin-inline-end: 20px;
+}
+
+h4 {
+    border-bottom: @boarderColor;
+}
+
+code {
+    color: @codeColor;
+}
+
+h1 {
+    border-bottom: 1px solid @boarderColor;
+}
+
+.blog-list-item h1 a {
+    text-decoration: none !important;
+}
+
+figcaption {
+    text-align: center;
+}

@@ -22,7 +22,7 @@
 @colorH1BorderBottom: #666;
 @colorH2BorderBottom: #CCC;
 @colorH3BorderBottom: #EEE;
-@colorH4BorderBottom: white;
+@colorH4BorderBottom: #EEE;
 @colorH5BorderBottom: #EEE;
 @colorH6BorderBottom: #EEE;
 @borderSizeH1: 1px;
@@ -74,6 +74,10 @@
      */
     .showGrid(@gridImage) {
         background-image: url("@{gridImage}");
+    }
+
+    .showGridAlt(@gridColor: #f4e3d7) {
+        background-image: repeating-linear-gradient(to bottom, transparent 0px, transparent (@magicNumber - 1), @gridColor (@magicNumber - 1), @gridColor @magicNumber);
     }
 
     .font(@fontSize: 100.01%, @fontFamily: @fontFamilyBody) {
