@@ -43,7 +43,12 @@ return [
                     [
                         "text" => "Kmom05",
                         "url" => "redovisning/kmom05",
-                        "title" => "Redovisning för kmom04.",
+                        "title" => "Redovisning för kmom05.",
+                    ],
+                    [
+                        "text" => "Kmom06",
+                        "url" => "redovisning/kmom06",
+                        "title" => "Redovisning för kmom06.",
                     ],
                 ],
             ],
@@ -80,14 +85,19 @@ return [
             "submenu" => [
                 "items" => [
                     [
-                        "text" => "kmom04",
+                        "text" => "Kmom04",
                         "url" => "rapport/fargschema",
                         "title" => "Färgval",
                     ],
                     [
-                        "text" => "kmom05",
+                        "text" => "Kmom05",
                         "url" => "rapport/laddningstid",
                         "title" => "Laddningstid",
+                    ],
+                    [
+                        "text" => "Kmom06",
+                        "url" => "rapport/designprinciper",
+                        "title" => "Designprinciper",
                     ],
                 ],
             ],

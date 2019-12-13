@@ -5,7 +5,7 @@ category:
     - Blommor
 published: "2019-12-04"
 ---
-En blå blomma
+--- En blå blomma ---
 ==================================
 
 [FIGURE src=image/blomma3.jpg? caption="En liten blå blomma"]

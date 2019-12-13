@@ -1,6 +1,6 @@
 ---
 ---
-Laddningstider
+--- Laddningstider ---
 =======================
 
 Uppgiften syftar till att belysa att webbplatser har olika lång laddningstid samt att utvärdera hur laddningstid påverkas av webbplatsens uppbyggnad. Vidare syftar uppgiften även till att undersöka hur laddningstiden på webbplatser kan förbättras.

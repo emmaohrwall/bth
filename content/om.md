@@ -16,7 +16,7 @@ views:
                 type: single
                 route: block/om-redovisa
 ---
-Om
+--- Om ---
 =========================
 
 Denna sidan är skapad som en del av kursen Design som läses vid Blekinge tekniska högskola.
